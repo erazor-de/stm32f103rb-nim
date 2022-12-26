@@ -225,7 +225,7 @@ typedef struct
 /**
   * @brief  RCC Internal/External Oscillator (HSE, HSI, LSE and LSI) configuration structure definition
   */
-typedef struct
+typedef struct _RCC_OscInitTypeDef
 {
   uint32_t OscillatorType;       /*!< The oscillators to be configured.
                                        This parameter can be a value of @ref RCC_Oscillator_Type */
@@ -1905,4 +1905,3 @@ HAL_StatusTypeDef HAL_RCCEx_DisablePLL2(void);
 #endif /* __STM32F1xx_HAL_RCC_EX_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-

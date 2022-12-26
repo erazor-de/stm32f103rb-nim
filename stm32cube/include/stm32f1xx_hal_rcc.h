@@ -1142,6 +1142,7 @@ typedef struct
 
 /* Include RCC HAL Extension module */
 #include "stm32f1xx_hal_rcc_ex.h"
+typedef struct _RCC_OscInitTypeDef RCC_OscInitTypeDef;
 
 /* Exported functions --------------------------------------------------------*/
 /** @addtogroup RCC_Exported_Functions
@@ -1375,4 +1376,3 @@ void              HAL_RCC_CSSCallback(void);
 #endif /* __STM32F1xx_HAL_RCC_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-
