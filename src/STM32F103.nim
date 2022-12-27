@@ -1,4 +1,5 @@
 # Peripheral access API for STM32F103 microcontrollers (generated using svd2nim)
+# Has been manually edited
 
 import std/volatile
 
@@ -2672,33 +2673,33 @@ type STK_Type = object
 # Peripheral object instances
 ################################################################################
 const FSMC* = FSMC_Type(
-  BCR1: FSMC_BCR1_Type(loc: 0xa0000000),
-  BTR1: FSMC_BTR1_Type(loc: 0xa0000004),
-  BCR2: FSMC_BCR2_Type(loc: 0xa0000008),
-  BTR2: FSMC_BTR2_Type(loc: 0xa000000c),
-  BCR3: FSMC_BCR3_Type(loc: 0xa0000010),
-  BTR3: FSMC_BTR3_Type(loc: 0xa0000014),
-  BCR4: FSMC_BCR4_Type(loc: 0xa0000018),
-  BTR4: FSMC_BTR4_Type(loc: 0xa000001c),
-  PCR2: FSMC_PCR2_Type(loc: 0xa0000060),
-  SR2: FSMC_SR2_Type(loc: 0xa0000064),
-  PMEM2: FSMC_PMEM2_Type(loc: 0xa0000068),
-  PATT2: FSMC_PATT2_Type(loc: 0xa000006c),
-  ECCR2: FSMC_ECCR2_Type(loc: 0xa0000074),
-  PCR3: FSMC_PCR3_Type(loc: 0xa0000080),
-  SR3: FSMC_SR3_Type(loc: 0xa0000084),
-  PMEM3: FSMC_PMEM3_Type(loc: 0xa0000088),
-  PATT3: FSMC_PATT3_Type(loc: 0xa000008c),
-  ECCR3: FSMC_ECCR3_Type(loc: 0xa0000094),
-  PCR4: FSMC_PCR4_Type(loc: 0xa00000a0),
-  SR4: FSMC_SR4_Type(loc: 0xa00000a4),
-  PMEM4: FSMC_PMEM4_Type(loc: 0xa00000a8),
-  PATT4: FSMC_PATT4_Type(loc: 0xa00000ac),
-  PIO4: FSMC_PIO4_Type(loc: 0xa00000b0),
-  BWTR1: FSMC_BWTR1_Type(loc: 0xa0000104),
-  BWTR2: FSMC_BWTR2_Type(loc: 0xa000010c),
-  BWTR3: FSMC_BWTR3_Type(loc: 0xa0000114),
-  BWTR4: FSMC_BWTR4_Type(loc: 0xa000011c),
+  BCR1: FSMC_BCR1_Type(loc: uint(0xa0000000)),
+  BTR1: FSMC_BTR1_Type(loc: uint(0xa0000004)),
+  BCR2: FSMC_BCR2_Type(loc: uint(0xa0000008)),
+  BTR2: FSMC_BTR2_Type(loc: uint(0xa000000c)),
+  BCR3: FSMC_BCR3_Type(loc: uint(0xa0000010)),
+  BTR3: FSMC_BTR3_Type(loc: uint(0xa0000014)),
+  BCR4: FSMC_BCR4_Type(loc: uint(0xa0000018)),
+  BTR4: FSMC_BTR4_Type(loc: uint(0xa000001c)),
+  PCR2: FSMC_PCR2_Type(loc: uint(0xa0000060)),
+  SR2: FSMC_SR2_Type(loc: uint(0xa0000064)),
+  PMEM2: FSMC_PMEM2_Type(loc: uint(0xa0000068)),
+  PATT2: FSMC_PATT2_Type(loc: uint(0xa000006c)),
+  ECCR2: FSMC_ECCR2_Type(loc: uint(0xa0000074)),
+  PCR3: FSMC_PCR3_Type(loc: uint(0xa0000080)),
+  SR3: FSMC_SR3_Type(loc: uint(0xa0000084)),
+  PMEM3: FSMC_PMEM3_Type(loc: uint(0xa0000088)),
+  PATT3: FSMC_PATT3_Type(loc: uint(0xa000008c)),
+  ECCR3: FSMC_ECCR3_Type(loc: uint(0xa0000094)),
+  PCR4: FSMC_PCR4_Type(loc: uint(0xa00000a0)),
+  SR4: FSMC_SR4_Type(loc: uint(0xa00000a4)),
+  PMEM4: FSMC_PMEM4_Type(loc: uint(0xa00000a8)),
+  PATT4: FSMC_PATT4_Type(loc: uint(0xa00000ac)),
+  PIO4: FSMC_PIO4_Type(loc: uint(0xa00000b0)),
+  BWTR1: FSMC_BWTR1_Type(loc: uint(0xa0000104)),
+  BWTR2: FSMC_BWTR2_Type(loc: uint(0xa000010c)),
+  BWTR3: FSMC_BWTR3_Type(loc: uint(0xa0000114)),
+  BWTR4: FSMC_BWTR4_Type(loc: uint(0xa000011c)),
 )
 
 const PWR* = PWR_Type(
@@ -3531,8 +3532,8 @@ const DAC* = DAC_Type(
 )
 
 const DBG* = DBG_Type(
-  IDCODE: DBG_IDCODE_Type(loc: 0xe0042000),
-  CR: DBG_CR_Type(loc: 0xe0042004),
+  IDCODE: DBG_IDCODE_Type(loc: uint(0xe0042000)),
+  CR: DBG_CR_Type(loc: uint(0xe0042004)),
 )
 
 const UART4* = UART4_Type(
@@ -3761,71 +3762,71 @@ const ETHERNET_DMA* = ETHERNET_DMA_Type(
 )
 
 const NVIC* = NVIC_Type(
-  ISER0: NVIC_ISER0_Type(loc: 0xe000e100),
-  ISER1: NVIC_ISER1_Type(loc: 0xe000e104),
-  ICER0: NVIC_ICER0_Type(loc: 0xe000e180),
-  ICER1: NVIC_ICER1_Type(loc: 0xe000e184),
-  ISPR0: NVIC_ISPR0_Type(loc: 0xe000e200),
-  ISPR1: NVIC_ISPR1_Type(loc: 0xe000e204),
-  ICPR0: NVIC_ICPR0_Type(loc: 0xe000e280),
-  ICPR1: NVIC_ICPR1_Type(loc: 0xe000e284),
-  IABR0: NVIC_IABR0_Type(loc: 0xe000e300),
-  IABR1: NVIC_IABR1_Type(loc: 0xe000e304),
-  IPR0: NVIC_IPR0_Type(loc: 0xe000e400),
-  IPR1: NVIC_IPR1_Type(loc: 0xe000e404),
-  IPR2: NVIC_IPR2_Type(loc: 0xe000e408),
-  IPR3: NVIC_IPR3_Type(loc: 0xe000e40c),
-  IPR4: NVIC_IPR4_Type(loc: 0xe000e410),
-  IPR5: NVIC_IPR5_Type(loc: 0xe000e414),
-  IPR6: NVIC_IPR6_Type(loc: 0xe000e418),
-  IPR7: NVIC_IPR7_Type(loc: 0xe000e41c),
-  IPR8: NVIC_IPR8_Type(loc: 0xe000e420),
-  IPR9: NVIC_IPR9_Type(loc: 0xe000e424),
-  IPR10: NVIC_IPR10_Type(loc: 0xe000e428),
-  IPR11: NVIC_IPR11_Type(loc: 0xe000e42c),
-  IPR12: NVIC_IPR12_Type(loc: 0xe000e430),
-  IPR13: NVIC_IPR13_Type(loc: 0xe000e434),
-  IPR14: NVIC_IPR14_Type(loc: 0xe000e438),
+  ISER0: NVIC_ISER0_Type(loc: uint(0xe000e100)),
+  ISER1: NVIC_ISER1_Type(loc: uint(0xe000e104)),
+  ICER0: NVIC_ICER0_Type(loc: uint(0xe000e180)),
+  ICER1: NVIC_ICER1_Type(loc: uint(0xe000e184)),
+  ISPR0: NVIC_ISPR0_Type(loc: uint(0xe000e200)),
+  ISPR1: NVIC_ISPR1_Type(loc: uint(0xe000e204)),
+  ICPR0: NVIC_ICPR0_Type(loc: uint(0xe000e280)),
+  ICPR1: NVIC_ICPR1_Type(loc: uint(0xe000e284)),
+  IABR0: NVIC_IABR0_Type(loc: uint(0xe000e300)),
+  IABR1: NVIC_IABR1_Type(loc: uint(0xe000e304)),
+  IPR0: NVIC_IPR0_Type(loc: uint(0xe000e400)),
+  IPR1: NVIC_IPR1_Type(loc: uint(0xe000e404)),
+  IPR2: NVIC_IPR2_Type(loc: uint(0xe000e408)),
+  IPR3: NVIC_IPR3_Type(loc: uint(0xe000e40c)),
+  IPR4: NVIC_IPR4_Type(loc: uint(0xe000e410)),
+  IPR5: NVIC_IPR5_Type(loc: uint(0xe000e414)),
+  IPR6: NVIC_IPR6_Type(loc: uint(0xe000e418)),
+  IPR7: NVIC_IPR7_Type(loc: uint(0xe000e41c)),
+  IPR8: NVIC_IPR8_Type(loc: uint(0xe000e420)),
+  IPR9: NVIC_IPR9_Type(loc: uint(0xe000e424)),
+  IPR10: NVIC_IPR10_Type(loc: uint(0xe000e428)),
+  IPR11: NVIC_IPR11_Type(loc: uint(0xe000e42c)),
+  IPR12: NVIC_IPR12_Type(loc: uint(0xe000e430)),
+  IPR13: NVIC_IPR13_Type(loc: uint(0xe000e434)),
+  IPR14: NVIC_IPR14_Type(loc: uint(0xe000e438)),
 )
 
 const MPU* = MPU_Type(
-  MPU_TYPER: MPU_MPU_TYPER_Type(loc: 0xe000ed90),
-  MPU_CTRL: MPU_MPU_CTRL_Type(loc: 0xe000ed94),
-  MPU_RNR: MPU_MPU_RNR_Type(loc: 0xe000ed98),
-  MPU_RBAR: MPU_MPU_RBAR_Type(loc: 0xe000ed9c),
-  MPU_RASR: MPU_MPU_RASR_Type(loc: 0xe000eda0),
+  MPU_TYPER: MPU_MPU_TYPER_Type(loc: uint(0xe000ed90)),
+  MPU_CTRL: MPU_MPU_CTRL_Type(loc: uint(0xe000ed94)),
+  MPU_RNR: MPU_MPU_RNR_Type(loc: uint(0xe000ed98)),
+  MPU_RBAR: MPU_MPU_RBAR_Type(loc: uint(0xe000ed9c)),
+  MPU_RASR: MPU_MPU_RASR_Type(loc: uint(0xe000eda0)),
 )
 
 const SCB_ACTRL* = SCB_ACTRL_Type(
-  ACTRL: SCB_ACTRL_ACTRL_Type(loc: 0xe000e008),
+  ACTRL: SCB_ACTRL_ACTRL_Type(loc: uint(0xe000e008)),
 )
 
 const NVIC_STIR* = NVIC_STIR_Type(
-  STIR: NVIC_STIR_STIR_Type(loc: 0xe000ef00),
+  STIR: NVIC_STIR_STIR_Type(loc: uint(0xe000ef00)),
 )
 
 const SCB* = SCB_Type(
-  CPUID: SCB_CPUID_Type(loc: 0xe000ed00),
-  ICSR: SCB_ICSR_Type(loc: 0xe000ed04),
-  VTOR: SCB_VTOR_Type(loc: 0xe000ed08),
-  AIRCR: SCB_AIRCR_Type(loc: 0xe000ed0c),
-  SCR: SCB_SCR_Type(loc: 0xe000ed10),
-  CCR: SCB_CCR_Type(loc: 0xe000ed14),
-  SHPR1: SCB_SHPR1_Type(loc: 0xe000ed18),
-  SHPR2: SCB_SHPR2_Type(loc: 0xe000ed1c),
-  SHPR3: SCB_SHPR3_Type(loc: 0xe000ed20),
-  SHCRS: SCB_SHCRS_Type(loc: 0xe000ed24),
-  CFSR_UFSR_BFSR_MMFSR: SCB_CFSR_UFSR_BFSR_MMFSR_Type(loc: 0xe000ed28),
-  HFSR: SCB_HFSR_Type(loc: 0xe000ed2c),
-  MMFAR: SCB_MMFAR_Type(loc: 0xe000ed34),
-  BFAR: SCB_BFAR_Type(loc: 0xe000ed38),
+  CPUID: SCB_CPUID_Type(loc: uint(0xe000ed00)),
+  ICSR: SCB_ICSR_Type(loc: uint(0xe000ed04)),
+  VTOR: SCB_VTOR_Type(loc: uint(0xe000ed08)),
+  AIRCR: SCB_AIRCR_Type(loc: uint(0xe000ed0c)),
+  SCR: SCB_SCR_Type(loc: uint(0xe000ed10)),
+  CCR: SCB_CCR_Type(loc: uint(0xe000ed14)),
+  SHPR1: SCB_SHPR1_Type(loc: uint(0xe000ed18)),
+  SHPR2: SCB_SHPR2_Type(loc: uint(0xe000ed1c)),
+  SHPR3: SCB_SHPR3_Type(loc: uint(0xe000ed20)),
+  SHCRS: SCB_SHCRS_Type(loc: uint(0xe000ed24)),
+  CFSR_UFSR_BFSR_MMFSR: SCB_CFSR_UFSR_BFSR_MMFSR_Type(loc: uint(0xe000ed28)),
+  HFSR: SCB_HFSR_Type(loc: uint(0xe000ed2c)),
+  MMFAR: SCB_MMFAR_Type(loc: uint(0xe000ed34)),
+  BFAR: SCB_BFAR_Type(loc: uint(0xe000ed38)),
 )
 
 const STK* = STK_Type(
-  CTRL: STK_CTRL_Type(loc: 0xe000e010),
-  LOAD: STK_LOAD_Type(loc: 0xe000e014),
-  VAL: STK_VAL_Type(loc: 0xe000e018),
-  CALIB: STK_CALIB_Type(loc: 0xe000e01c),
+  CTRL: STK_CTRL_Type(loc: uint(0xe000e010)),
+  LOAD: STK_LOAD_Type(loc: uint(0xe000e014)),
+  VAL: STK_VAL_Type(loc: uint(0xe000e018)),
+  CALIB: STK_CALIB_Type(loc: uint(0xe000e01c)),
 )
 
 
@@ -16200,4 +16201,3 @@ template modifyIt*(reg: STK_CALIB_Type, op: untyped): untyped =
     var it {.inject.} = reg.read()
     op
     reg.write(it)
-
