@@ -1,0 +1,8 @@
+/stm32cube/**/*.o
+/stm32cube/lib/libstm32cube.a
+/nimcache
+/firmware.elf
+/firmware.bin
+/stm32f103rb-nim.sublime-workspace
+/stm32cube/.cache
+/stm32cube/compile_commands.json

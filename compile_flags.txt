@@ -1,0 +1,20 @@
+# Options for clangd differ from actually used
+
+-I/home/stefan/opt/nim/lib
+-Istm32cube
+-Istm32cube/include
+-DSTM32F103xB
+-DUSE_HAL_DRIVER
+-DUSE_STM32F1xx_NUCLEO
+-mcpu=cortex-m3
+-mthumb
+
+# gcc automatically defines this, but not clang
+-D__SOFTFP__=1
+
+# This option is needed on 64bit systems
+-m32
+
+# Next two would produce invalid AST
+#-march=armv7-m
+#-mtune=cortex-m3

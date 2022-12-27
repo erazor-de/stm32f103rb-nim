@@ -1,0 +1,39 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"nimcache",
+				".cache",
+			],
+			"path": ".",
+		},
+	],
+	"settings":
+	{
+		"LSP":
+		{
+			"clangd":
+			{
+				"command": [
+					"~/opt/clangd/bin/clangd",
+					"--background-index",
+					"--all-scopes-completion",
+					"--pch-storage=memory",
+					"--header-insertion=never",
+					"--suggest-missing-includes",
+					"--pretty",
+					"--query-driver=*arm-none-eabi-*"
+				],
+				"enabled": true,
+			},
+			"nimlsp":
+			{
+				"enabled": true,
+			},
+		},
+		"index_files": false,
+		"show_definitions": false,
+	},
+}
