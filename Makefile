@@ -30,7 +30,7 @@ all: elf
 
 # Generate firmware
 elf: firmware.elf
-firmware.elf: stm32cube/lib/libstm32cube.a src/STM32F103.nim
+firmware.elf: $(wildcard src/*.nim) stm32cube/lib/libstm32cube.a src/STM32F103.nim
 	$(NIM) compileToC $(NIMFLAGS) --out: $@ src/firmware.nim
 	$(SIZE) $@
 
